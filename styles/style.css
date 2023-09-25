@@ -28,3 +28,27 @@ a {
   --color-theme: #69b7de;
   --font-family-theme: sans-serif;
 }
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: auto;
+  background-color: var(--color-theme);
+  padding: 70px;
+  gap: 15px;
+}
+
+.form-title {
+  margin: auto;
+}
+
+.form-control {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-check-box {
+  width: 40px;
+  height: 40px;
+}
