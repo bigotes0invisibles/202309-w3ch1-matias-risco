@@ -3,7 +3,14 @@ const formElement = document.querySelector("form");
 formElement.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  validateForm(event.target);
+  for (let index = 0; index < event.target[5].checked ? 7 : 4; index++) {
+    if (!validateForm(event.target[index], event.target)) {
+      return false;
+    }
+  }
+
+  console.log("No hay problemas el formulario ha sido enviado");
+  return true;
 });
 
 formElement
