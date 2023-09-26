@@ -8,7 +8,7 @@ formElement.addEventListener("submit", (event) => {
       return false;
     }
   }
-
+  setVoidFormValue(event.target);
   console.log("No hay problemas el formulario ha sido enviado");
   return true;
 });
@@ -26,3 +26,10 @@ formElement
         .forEach((element) => element.classList.add("hidden"));
     }
   });
+
+const setVoidFormValue = (target) => {
+  for (let index = 0; index < target.length; index++) {
+    const element = target[index];
+    element.value = "";
+  }
+};
