@@ -3,7 +3,7 @@ const formElement = document.querySelector("form");
 formElement.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  for (let index = 0; index < event.target[5].checked ? 7 : 4; index++) {
+  for (let index = 0; index < event.target.length; index++) {
     if (!validateForm(event.target[index], event.target)) {
       return false;
     }

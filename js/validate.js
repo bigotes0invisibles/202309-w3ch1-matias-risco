@@ -9,8 +9,8 @@ const validateForm = (element, target) => {
         return validateCamp(element);
       }
       break;
+    case "button":
     case "check-box":
-      break;
     case "attached-file":
       break;
     case "body":
